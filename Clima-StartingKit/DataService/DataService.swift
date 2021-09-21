@@ -35,6 +35,11 @@ struct DataService {
                 return
             }
             
+            if let statusCode = (response as? HTTPURLResponse)?.statusCode, statusCode >= 400 {
+                completion(.failure(NetworkError.failedRequest))
+                return
+            }
+            
             if let data = data {
                 do {
                     let decodedData = try JSONDecoder().decode(WeatherData.self, from: data)

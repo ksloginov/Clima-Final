@@ -9,5 +9,6 @@ import Foundation
 
 enum NetworkError: Error {
     case failedJson
+    case failedRequest
     case failedURL
 }

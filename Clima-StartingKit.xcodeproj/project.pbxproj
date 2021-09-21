@@ -31,6 +31,7 @@
 		D0517AE926F75A6E00E4D2F9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D0517AEB26F75D9E00E4D2F9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D0517AED26F7674D00E4D2F9 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		D0DD7C4926FA663100BBDA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +64,7 @@
 		D0517AD026F752A200E4D2F9 /* Clima-StartingKit */ = {
 			isa = PBXGroup;
 			children = (
+				D0DD7C4926FA663100BBDA4C /* Info.plist */,
 				D0517AE226F752E900E4D2F9 /* DataService */,
 				D0517AE126F752C800E4D2F9 /* ViewModel */,
 				D0517AE026F752C200E4D2F9 /* View */,
@@ -328,6 +330,9 @@
 				DEVELOPMENT_TEAM = 282GM4A2S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clima-StartingKit/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Clima;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We load your location to show the local weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -358,6 +363,9 @@
 				DEVELOPMENT_TEAM = 282GM4A2S4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Clima-StartingKit/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Clima;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We load your location to show the local weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
