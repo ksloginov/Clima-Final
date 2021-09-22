@@ -12,6 +12,11 @@ class WeatherViewModel: NSObject, ObservableObject {
     
     @Published var searchQuery: String = ""
     @Published var weatherCondtion: WeatherCondition?
+    @Published var favoriteCities: [String] = [] {
+        didSet {
+            UserDefaults.standard.set(favoriteCities, forKey: "cities")
+        }
+    }
     
     var latitude: CLLocationDegrees?
     var longitude: CLLocationDegrees?
@@ -24,6 +29,8 @@ class WeatherViewModel: NSObject, ObservableObject {
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
+        
+        favoriteCities = (UserDefaults.standard.array(forKey: "cities") as? [String]) ?? []
     }
     
     func loadWeatherBySearchQuery(_ query: String) {

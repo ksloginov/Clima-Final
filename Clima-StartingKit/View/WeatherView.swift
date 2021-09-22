@@ -28,6 +28,20 @@ struct WeatherView: View {
                     .onChange(of: viewModel.searchQuery) { newValue in
                         viewModel.loadWeatherBySearchQuery(newValue)
                     }
+                
+                if viewModel.searchQuery.count >= 2 {
+                    Button {
+                        if let index = viewModel.favoriteCities.firstIndex(where: {$0.lowercased() == viewModel.searchQuery.lowercased()}) {
+                            viewModel.favoriteCities.remove(at: index)
+                        } else {
+                            viewModel.favoriteCities.append(viewModel.searchQuery)
+                        }
+                    } label: {
+                        Image(systemName: viewModel.favoriteCities.map({$0.lowercased()}).contains(viewModel.searchQuery.lowercased()) ? "star.fill" : "star" )
+                            .resizable()
+                            .frame(width: 48.0, height: 48.0)
+                    }
+                }
             }
             
             if let weatherCondtion = viewModel.weatherCondtion {
@@ -51,6 +65,18 @@ struct WeatherView: View {
             }
             
             Spacer()
+            
+            ForEach(viewModel.favoriteCities, id: \.self) { city in
+                Button {
+                    viewModel.searchQuery = city
+                } label: {
+                    HStack {
+                        Text(city)
+                            .font(.system(size: 32.0, weight: .heavy, design:   .rounded))
+                        Spacer()
+                    }
+                }
+            }
         }
         .padding()
         .foregroundColor(Color("textColor"))
