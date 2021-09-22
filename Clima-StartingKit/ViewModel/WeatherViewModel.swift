@@ -27,6 +27,10 @@ class WeatherViewModel: NSObject, ObservableObject {
     }
     
     func loadWeatherBySearchQuery(_ query: String) {
+        if query.count < 2 {
+            return
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
             if self?.searchQuery == query {
                 self?.dataService.loadWeather(for: query) { result in

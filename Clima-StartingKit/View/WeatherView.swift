@@ -15,6 +15,7 @@ struct WeatherView: View {
         VStack(alignment: .trailing) {
             HStack(spacing: 15.0) {
                 Button {
+                    viewModel.searchQuery = ""
                     viewModel.requestLocation()
                 } label: {
                     Image(systemName: "location.circle.fill")
