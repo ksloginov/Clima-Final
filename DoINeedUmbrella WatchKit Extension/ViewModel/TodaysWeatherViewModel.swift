@@ -12,10 +12,10 @@ import SwiftUI
 enum State {
     case loading
     case error(Error)
-    case value(needUmbrella: Bool, currentWeather: WeatherState)
+    case value(needUmbrella: Bool, currentWeather: WeatherCondition?)
 }
 
-class TodaysWeatherViewController: NSObject, ObservableObject, CLLocationManagerDelegate {
+class TodaysWeatherViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var state: State = .loading
     
@@ -45,7 +45,7 @@ class TodaysWeatherViewController: NSObject, ObservableObject, CLLocationManager
                         do {
                             let decodedData = try JSONDecoder().decode(TodayWeatherData.self, from: data)
                             DispatchQueue.main.async {
-                                self?.state = .value(needUmbrella: decodedData.hourly.prefix(10).contains(where: {$0.weatherCondition?.isRaining == true }), currentWeather: decodedData.current)
+                                self?.state = .value(needUmbrella: decodedData.hourly.prefix(10).contains(where: {$0.weatherCondition?.isRaining == true }), currentWeather: decodedData.current.weatherCondition)
                             }
                             
                         } catch {
@@ -53,7 +53,7 @@ class TodaysWeatherViewController: NSObject, ObservableObject, CLLocationManager
                             return
                         }
                     }
-                }
+                }.resume()
             }
         }
     }

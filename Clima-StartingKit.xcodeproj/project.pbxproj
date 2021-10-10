@@ -15,7 +15,7 @@
 		724EED132712F4AF00C33DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724EED122712F4AF00C33DA8 /* Assets.xcassets */; };
 		724EED162712F4AF00C33DA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724EED152712F4AF00C33DA8 /* Preview Assets.xcassets */; };
 		724EED1A2712F4AF00C33DA8 /* DoINeedUmbrella.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 724EECFF2712F4AC00C33DA8 /* DoINeedUmbrella.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		724EED262712F8B700C33DA8 /* TodaysWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724EED252712F8B700C33DA8 /* TodaysWeatherViewController.swift */; };
+		724EED262712F8B700C33DA8 /* TodaysWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724EED252712F8B700C33DA8 /* TodaysWeatherViewModel.swift */; };
 		724EED272712FAAC00C33DA8 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0517AE526F7560E00E4D2F9 /* WeatherData.swift */; };
 		724EED282712FB2100C33DA8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0517AE326F752F700E4D2F9 /* Endpoint.swift */; };
 		724EED2A2712FCD500C33DA8 /* WeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0517AE726F759B100E4D2F9 /* WeatherCondition.swift */; };
@@ -85,7 +85,7 @@
 		724EED122712F4AF00C33DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		724EED152712F4AF00C33DA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		724EED172712F4AF00C33DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		724EED252712F8B700C33DA8 /* TodaysWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysWeatherViewController.swift; sourceTree = "<group>"; };
+		724EED252712F8B700C33DA8 /* TodaysWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysWeatherViewModel.swift; sourceTree = "<group>"; };
 		724EED2C2712FE0600C33DA8 /* TodayWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherData.swift; sourceTree = "<group>"; };
 		D0517ACE26F752A200E4D2F9 /* Clima-StartingKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clima-StartingKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0517AD126F752A200E4D2F9 /* Clima_StartingKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clima_StartingKitApp.swift; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		724EED232712F84E00C33DA8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				724EED252712F8B700C33DA8 /* TodaysWeatherViewController.swift */,
+				724EED252712F8B700C33DA8 /* TodaysWeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -387,7 +387,7 @@
 				724EED2D2712FE0600C33DA8 /* TodayWeatherData.swift in Sources */,
 				724EED2B2712FD2400C33DA8 /* NetworkError.swift in Sources */,
 				724EED272712FAAC00C33DA8 /* WeatherData.swift in Sources */,
-				724EED262712F8B700C33DA8 /* TodaysWeatherViewController.swift in Sources */,
+				724EED262712F8B700C33DA8 /* TodaysWeatherViewModel.swift in Sources */,
 				724EED0F2712F4AE00C33DA8 /* Clima_StartingKitApp.swift in Sources */,
 				724EED282712FB2100C33DA8 /* Endpoint.swift in Sources */,
 				724EED112712F4AE00C33DA8 /* ComplicationController.swift in Sources */,
@@ -490,8 +490,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DoINeedUmbrella WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "DoINeedUmbrella WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = DoINeedUmbrella_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We load your location to show the local weather";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,8 +522,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "DoINeedUmbrella WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "DoINeedUmbrella WatchKit Extension";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = DoINeedUmbrella_WatchKit_Extension.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We load your location to show the local weather";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
