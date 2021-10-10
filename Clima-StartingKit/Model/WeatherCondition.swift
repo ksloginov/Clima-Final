@@ -16,6 +16,15 @@ struct WeatherCondition {
         return String(format: "%.1f", temperature)
     }
     
+    var isRaining: Bool {
+        switch conditionId {
+        case 500...531:
+            return true
+        default:
+            return false
+        }
+    }
+    
     var conditionName: String {
         switch conditionId {
         case 200...232:
