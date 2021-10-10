@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		724EED022712F4AE00C33DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724EED012712F4AE00C33DA8 /* Assets.xcassets */; };
+		724EED082712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 724EED072712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		724EED0D2712F4AE00C33DA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724EED0C2712F4AE00C33DA8 /* ContentView.swift */; };
+		724EED0F2712F4AE00C33DA8 /* Clima_StartingKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724EED0E2712F4AE00C33DA8 /* Clima_StartingKitApp.swift */; };
+		724EED112712F4AE00C33DA8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724EED102712F4AE00C33DA8 /* ComplicationController.swift */; };
+		724EED132712F4AF00C33DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724EED122712F4AF00C33DA8 /* Assets.xcassets */; };
+		724EED162712F4AF00C33DA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724EED152712F4AF00C33DA8 /* Preview Assets.xcassets */; };
+		724EED1A2712F4AF00C33DA8 /* DoINeedUmbrella.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 724EECFF2712F4AC00C33DA8 /* DoINeedUmbrella.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D0517AD226F752A200E4D2F9 /* Clima_StartingKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0517AD126F752A200E4D2F9 /* Clima_StartingKitApp.swift */; };
 		D0517AD426F752A200E4D2F9 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0517AD326F752A200E4D2F9 /* WeatherView.swift */; };
 		D0517AD626F752A400E4D2F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0517AD526F752A400E4D2F9 /* Assets.xcassets */; };
@@ -19,7 +27,58 @@
 		D0517AEE26F7674D00E4D2F9 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0517AED26F7674D00E4D2F9 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		724EED092712F4AE00C33DA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0517AC626F752A200E4D2F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 724EED062712F4AE00C33DA8;
+			remoteInfo = "DoINeedUmbrella WatchKit Extension";
+		};
+		724EED182712F4AF00C33DA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0517AC626F752A200E4D2F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 724EECFE2712F4AC00C33DA8;
+			remoteInfo = DoINeedUmbrella;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		724EED1B2712F4AF00C33DA8 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				724EED1A2712F4AF00C33DA8 /* DoINeedUmbrella.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		724EED1E2712F4AF00C33DA8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				724EED082712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		724EECFF2712F4AC00C33DA8 /* DoINeedUmbrella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoINeedUmbrella.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		724EED012712F4AE00C33DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		724EED072712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DoINeedUmbrella WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		724EED0C2712F4AE00C33DA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		724EED0E2712F4AE00C33DA8 /* Clima_StartingKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clima_StartingKitApp.swift; sourceTree = "<group>"; };
+		724EED102712F4AE00C33DA8 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		724EED122712F4AF00C33DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		724EED152712F4AF00C33DA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		724EED172712F4AF00C33DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0517ACE26F752A200E4D2F9 /* Clima-StartingKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clima-StartingKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0517AD126F752A200E4D2F9 /* Clima_StartingKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clima_StartingKitApp.swift; sourceTree = "<group>"; };
 		D0517AD326F752A200E4D2F9 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -35,6 +94,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		724EED042712F4AE00C33DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0517ACB26F752A200E4D2F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +111,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		724EED002712F4AC00C33DA8 /* DoINeedUmbrella */ = {
+			isa = PBXGroup;
+			children = (
+				724EED012712F4AE00C33DA8 /* Assets.xcassets */,
+			);
+			path = DoINeedUmbrella;
+			sourceTree = "<group>";
+		};
+		724EED0B2712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				724EED0C2712F4AE00C33DA8 /* ContentView.swift */,
+				724EED0E2712F4AE00C33DA8 /* Clima_StartingKitApp.swift */,
+				724EED102712F4AE00C33DA8 /* ComplicationController.swift */,
+				724EED122712F4AF00C33DA8 /* Assets.xcassets */,
+				724EED172712F4AF00C33DA8 /* Info.plist */,
+				724EED142712F4AF00C33DA8 /* Preview Content */,
+			);
+			path = "DoINeedUmbrella WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		724EED142712F4AF00C33DA8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				724EED152712F4AF00C33DA8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		D0517AC526F752A200E4D2F9 = {
 			isa = PBXGroup;
 			children = (
 				D0517AD026F752A200E4D2F9 /* Clima-StartingKit */,
+				724EED002712F4AC00C33DA8 /* DoINeedUmbrella */,
+				724EED0B2712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension */,
 				D0517ACF26F752A200E4D2F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				D0517ACE26F752A200E4D2F9 /* Clima-StartingKit.app */,
+				724EECFF2712F4AC00C33DA8 /* DoINeedUmbrella.app */,
+				724EED072712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +221,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		724EECFE2712F4AC00C33DA8 /* DoINeedUmbrella */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724EED222712F4AF00C33DA8 /* Build configuration list for PBXNativeTarget "DoINeedUmbrella" */;
+			buildPhases = (
+				724EECFD2712F4AC00C33DA8 /* Resources */,
+				724EED1E2712F4AF00C33DA8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				724EED0A2712F4AE00C33DA8 /* PBXTargetDependency */,
+			);
+			name = DoINeedUmbrella;
+			productName = DoINeedUmbrella;
+			productReference = 724EECFF2712F4AC00C33DA8 /* DoINeedUmbrella.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		724EED062712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724EED212712F4AF00C33DA8 /* Build configuration list for PBXNativeTarget "DoINeedUmbrella WatchKit Extension" */;
+			buildPhases = (
+				724EED032712F4AE00C33DA8 /* Sources */,
+				724EED042712F4AE00C33DA8 /* Frameworks */,
+				724EED052712F4AE00C33DA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DoINeedUmbrella WatchKit Extension";
+			productName = "DoINeedUmbrella WatchKit Extension";
+			productReference = 724EED072712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		D0517ACD26F752A200E4D2F9 /* Clima-StartingKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0517ADC26F752A400E4D2F9 /* Build configuration list for PBXNativeTarget "Clima-StartingKit" */;
@@ -129,10 +262,12 @@
 				D0517ACA26F752A200E4D2F9 /* Sources */,
 				D0517ACB26F752A200E4D2F9 /* Frameworks */,
 				D0517ACC26F752A200E4D2F9 /* Resources */,
+				724EED1B2712F4AF00C33DA8 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				724EED192712F4AF00C33DA8 /* PBXTargetDependency */,
 			);
 			name = "Clima-StartingKit";
 			productName = "Clima-StartingKit";
@@ -149,6 +284,12 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					724EECFE2712F4AC00C33DA8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					724EED062712F4AE00C33DA8 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					D0517ACD26F752A200E4D2F9 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -168,11 +309,30 @@
 			projectRoot = "";
 			targets = (
 				D0517ACD26F752A200E4D2F9 /* Clima-StartingKit */,
+				724EECFE2712F4AC00C33DA8 /* DoINeedUmbrella */,
+				724EED062712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		724EECFD2712F4AC00C33DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724EED022712F4AE00C33DA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		724EED052712F4AE00C33DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724EED162712F4AF00C33DA8 /* Preview Assets.xcassets in Resources */,
+				724EED132712F4AF00C33DA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0517ACC26F752A200E4D2F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +345,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		724EED032712F4AE00C33DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724EED0D2712F4AE00C33DA8 /* ContentView.swift in Sources */,
+				724EED0F2712F4AE00C33DA8 /* Clima_StartingKitApp.swift in Sources */,
+				724EED112712F4AE00C33DA8 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0517ACA26F752A200E4D2F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,7 +372,134 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		724EED0A2712F4AE00C33DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 724EED062712F4AE00C33DA8 /* DoINeedUmbrella WatchKit Extension */;
+			targetProxy = 724EED092712F4AE00C33DA8 /* PBXContainerItemProxy */;
+		};
+		724EED192712F4AF00C33DA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 724EECFE2712F4AC00C33DA8 /* DoINeedUmbrella */;
+			targetProxy = 724EED182712F4AF00C33DA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		724EED1C2712F4AF00C33DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 282GM4A2S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = DoINeedUmbrella_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = DoINeedUmbrella;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "no.kristiania.instructor.Clima-StartingKit";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.kristiania.instructor.Clima-StartingKit.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		724EED1D2712F4AF00C33DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 282GM4A2S4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = DoINeedUmbrella_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = DoINeedUmbrella;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "no.kristiania.instructor.Clima-StartingKit";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.kristiania.instructor.Clima-StartingKit.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		724EED1F2712F4AF00C33DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DoINeedUmbrella WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 282GM4A2S4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DoINeedUmbrella WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DoINeedUmbrella WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.kristiania.instructor.Clima-StartingKit.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		724EED202712F4AF00C33DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DoINeedUmbrella WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 282GM4A2S4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DoINeedUmbrella WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "DoINeedUmbrella WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "no.kristiania.instructor.Clima-StartingKit.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
 		D0517ADA26F752A400E4D2F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -388,6 +685,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		724EED212712F4AF00C33DA8 /* Build configuration list for PBXNativeTarget "DoINeedUmbrella WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724EED1F2712F4AF00C33DA8 /* Debug */,
+				724EED202712F4AF00C33DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		724EED222712F4AF00C33DA8 /* Build configuration list for PBXNativeTarget "DoINeedUmbrella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724EED1C2712F4AF00C33DA8 /* Debug */,
+				724EED1D2712F4AF00C33DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0517AC926F752A200E4D2F9 /* Build configuration list for PBXProject "Clima-StartingKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
