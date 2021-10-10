@@ -12,7 +12,7 @@ struct Clima_StartingKitApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                ToadaysWeatherView()
             }
         }
     }
